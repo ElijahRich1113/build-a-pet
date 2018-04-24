@@ -8,37 +8,64 @@
             <link rel="stylesheet" href="styles.css">
         </head>
         <body>
-            <h1>Build-A-Pet Workshop</h1>
-            <h5>Where dreams ARE true!</h5>
-            <form id="bts">
-            <h2>PET NAME:</h2>
-            <input type="text">
-            <br>
-            <h2>Type of Pet</h2>
-            <select name="Type of Animal">
-                <option value="Select">Select</option>
-                <option value="Platypus Bear">Platypus Bear</option>
-                <option value="Catagator">Catagator</option>
-                <option value="Dragon Moose">Dragon Moose</option>
-                <option value="Turtle Duck">Turtle Duck</option>
-            </select>
-            <br>
-            <h2>Number of Legs</h2>
-            <input type="">
-            <br>
-            <h2>Special Abilities</h2>
-            <input type="">
-            <br>
-            <h2>Pet Email</h2>
-            <input type="text">
-            <br>
-            <h2>Pet Password</h2>
-            <input type="text">
-            <br>
-            <h2>Description:</h2>
-            <input type="text">
-            </form>
-
-            <script src="app.js"></script>
+            <div id="container">
+                <h1>Build-A-Pet Workshop</h1>
+                <h5>Where dreams ARE true!</h5>
+                    <div id="form-mask">
+                        <form id="form">
+                            <div class="field-container">
+                                <h2>PET NAME:</h2>
+                                <input type="text" id="name">
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <h2>TYPE OF PET</h2>
+                                <select name="Type of Animal">
+                                    <option value="Select" id="type">Select</option>
+                                    <option value="Platypus Bear" id="type">Platypus Bear</option>
+                                    <option value="Catagator" id="type">Catagator</option>
+                                    <option value="Dragon Moose" id="type">Dragon Moose</option>
+                                    <option value="Turtle Duck" id="type">Turtle Duck</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <h2>NUMBER OF LEGS</h2>
+                                <input type="radio" name="legs" value="2" class="legs" checked>2
+                                <input type="radio" name="legs" value="4" class="legs">4
+                                <input type="radio" name="legs" value="6" class="legs">6
+                                <input type="radio" name="legs" value="8" class="legs">8
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <h2>SPECIAL ABILITIES</h2>
+                                <input type="checkbox" name="s-a" class="s-a" value="water-spray">Water Spray
+                                <input type="checkbox" name="s-a" class="s-a" value="fire-spray">Fire Spray
+                                <input type="checkbox" name="s-a" class="s-a" value="invisibility">Invisibility
+                                <input type="checkbox" name="s-a" class="s-a" value="flying">Flying
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <h2>PET EMAIL</h2>
+                                <input type="text" id="email">
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <h2>PET PASSWORD</h2>
+                                <input type="password" id="password">
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <h2>PET DESCRIPTION</h2>
+                                <input type="text" id="desc">
+                            </div>
+                            <br>
+                            <div class="field-container">
+                                <input type="submit" name="submit">
+                            </div>
+                        </form>
+                    <script src="app.js"></script>
+                </div>
+            </div>    
         </body>
 </html>
